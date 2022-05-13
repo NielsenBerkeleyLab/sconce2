@@ -171,7 +171,7 @@ double OneCell3TrParam2DegPolyHMM::getLogEmissionProb(double tumorDepth, double 
   // if diploidDepth == 0, assume this is a hard to map region (ie any tumor reads mapping here are spurious)
   // P(any number reads | no data) = 1
   if(diploidDepth < 1e-4) {
-    return 1;
+    return 0;
   }
 
   double currLibSizeScalingFactor = this->getLibScalingFactor(cellIdx);
@@ -186,7 +186,7 @@ double OneCell3TrParam2DegPolyHMM::getLogEmissionProb(double tumorDepth, double 
 
   // if diploidDepth is so low that p or r goes negative, assume this is a hard to map region
   if((p < 0 || r < 0) && diploidDepth < 1) {
-    return 1;
+    return 0;
   }
 
   if(r < 1) {
