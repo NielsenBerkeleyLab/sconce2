@@ -1,5 +1,11 @@
+# temp files
 *.swp
-*.o
-sconce2
+
+# object files
 build/*
+*.o
+
+# executables
+sconce2
+simulations/sconce_sim
 
