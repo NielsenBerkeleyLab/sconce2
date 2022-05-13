@@ -30,5 +30,5 @@ SCONCE2 was developed and tested on Ubuntu 18.04.
 ```
 git clone git@github.com:NielsenBerkeleyLab/sconce2.git
 ```
-2. Run `make`. This will build intermediates into the `build/` directory and create an executable named `sconce`.
+2. Run `make`. This will build intermediates into the `build/` directory and create an executable named `sconce2`.
 
