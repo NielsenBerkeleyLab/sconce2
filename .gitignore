@@ -9,3 +9,7 @@ build/*
 sconce2
 simulations/sconce_sim
 
+# simulation ref files
+test/diploid/*
+test/cancer/*
+
